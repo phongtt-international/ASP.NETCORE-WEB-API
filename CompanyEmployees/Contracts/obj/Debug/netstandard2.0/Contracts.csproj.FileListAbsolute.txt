@@ -1,0 +1,9 @@
+F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\Contracts\bin\Debug\netstandard2.0\Contracts.deps.json
+F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\Contracts\bin\Debug\netstandard2.0\Contracts.dll
+F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\Contracts\bin\Debug\netstandard2.0\Contracts.pdb
+F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\Contracts\obj\Debug\netstandard2.0\Contracts.csprojAssemblyReference.cache
+F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\Contracts\obj\Debug\netstandard2.0\Contracts.csproj.CoreCompileInputs.cache
+F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\Contracts\obj\Debug\netstandard2.0\Contracts.AssemblyInfoInputs.cache
+F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\Contracts\obj\Debug\netstandard2.0\Contracts.AssemblyInfo.cs
+F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\Contracts\obj\Debug\netstandard2.0\Contracts.dll
+F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\Contracts\obj\Debug\netstandard2.0\Contracts.pdb
