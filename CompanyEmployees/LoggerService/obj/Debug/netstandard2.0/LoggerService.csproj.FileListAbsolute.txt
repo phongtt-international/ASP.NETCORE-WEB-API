@@ -1,12 +1,12 @@
 F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\LoggerService\bin\Debug\netstandard2.0\LoggerService.deps.json
 F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\LoggerService\bin\Debug\netstandard2.0\LoggerService.dll
-F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\LoggerService\obj\Debug\netstandard2.0\LoggerService.AssemblyInfoInputs.cache
-F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\LoggerService\obj\Debug\netstandard2.0\LoggerService.AssemblyInfo.cs
 F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\LoggerService\bin\Debug\netstandard2.0\LoggerService.pdb
 F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\LoggerService\bin\Debug\netstandard2.0\Contracts.dll
 F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\LoggerService\bin\Debug\netstandard2.0\Contracts.pdb
 F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\LoggerService\obj\Debug\netstandard2.0\LoggerService.csprojAssemblyReference.cache
 F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\LoggerService\obj\Debug\netstandard2.0\LoggerService.csproj.CoreCompileInputs.cache
+F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\LoggerService\obj\Debug\netstandard2.0\LoggerService.AssemblyInfoInputs.cache
+F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\LoggerService\obj\Debug\netstandard2.0\LoggerService.AssemblyInfo.cs
 F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\LoggerService\obj\Debug\netstandard2.0\LoggerService.csproj.CopyComplete
 F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\LoggerService\obj\Debug\netstandard2.0\LoggerService.dll
 F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\LoggerService\obj\Debug\netstandard2.0\LoggerService.pdb
