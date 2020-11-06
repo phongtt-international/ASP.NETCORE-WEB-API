@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompanyEmployees", "CompanyEmployees\CompanyEmployees.csproj", "{A61E4B3F-898E-4C3F-8BA8-C10D60BF0604}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompanyEmployees", "CompanyEmployees\CompanyEmployees.csproj", "{A61E4B3F-898E-4C3F-8BA8-C10D60BF0604}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts", "Contracts\Contracts.csproj", "{69D36EAF-547D-4362-981B-0DF8D257DE2C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contracts", "Contracts\Contracts.csproj", "{69D36EAF-547D-4362-981B-0DF8D257DE2C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggerService", "LoggerService\LoggerService.csproj", "{E1CBBF02-A5A7-4D5B-95B6-14E5060AE38B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoggerService", "LoggerService\LoggerService.csproj", "{E1CBBF02-A5A7-4D5B-95B6-14E5060AE38B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{65EEF9D2-07A0-4268-AAE7-F8E9FE796973}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "Entities\Entities.csproj", "{65EEF9D2-07A0-4268-AAE7-F8E9FE796973}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{74594A45-A761-4F9A-AB16-3C9AAE280985}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{65EEF9D2-07A0-4268-AAE7-F8E9FE796973}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65EEF9D2-07A0-4268-AAE7-F8E9FE796973}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65EEF9D2-07A0-4268-AAE7-F8E9FE796973}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74594A45-A761-4F9A-AB16-3C9AAE280985}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74594A45-A761-4F9A-AB16-3C9AAE280985}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74594A45-A761-4F9A-AB16-3C9AAE280985}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74594A45-A761-4F9A-AB16-3C9AAE280985}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

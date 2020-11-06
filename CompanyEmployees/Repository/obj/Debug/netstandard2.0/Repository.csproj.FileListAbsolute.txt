@@ -1,0 +1,10 @@
+F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\Repository\bin\Debug\netstandard2.0\Repository.deps.json
+F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\Repository\bin\Debug\netstandard2.0\Repository.dll
+F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\Repository\bin\Debug\netstandard2.0\Contracts.dll
+F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\Repository\bin\Debug\netstandard2.0\Entities.dll
+F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\Repository\bin\Debug\netstandard2.0\Contracts.pdb
+F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\Repository\bin\Debug\netstandard2.0\Entities.pdb
+F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\Repository\obj\Debug\netstandard2.0\Repository.csprojAssemblyReference.cache
+F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\Repository\obj\Debug\netstandard2.0\Repository.AssemblyInfoInputs.cache
+F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\Repository\obj\Debug\netstandard2.0\Repository.AssemblyInfo.cs
+F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\Repository\obj\Debug\netstandard2.0\Repository.csproj.CopyComplete
