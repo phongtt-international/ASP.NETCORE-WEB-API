@@ -33,6 +33,7 @@ namespace CompanyEmployees
             services.ConfigureCors();
             services.ConfiguresIISIntergations();
             services.ConfigureLoggerService();
+            services.ConfigureSqlContext(Configuration);
 
             services.AddControllers();
         }
