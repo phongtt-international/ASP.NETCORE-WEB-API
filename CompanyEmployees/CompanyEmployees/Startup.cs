@@ -34,6 +34,7 @@ namespace CompanyEmployees
             services.ConfiguresIISIntergations();
             services.ConfigureLoggerService();
             services.ConfigureSqlContext(Configuration);
+            services.ConfigureRepositoryManager();
 
             services.AddControllers();
         }
