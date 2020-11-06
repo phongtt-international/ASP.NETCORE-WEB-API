@@ -27,9 +27,6 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "F:\\WebAPI\\ASPDotNetCore-WebApi\\CompanyEmployees\\Contracts\\Contracts.csproj": {
-                "projectPath": "F:\\WebAPI\\ASPDotNetCore-WebApi\\CompanyEmployees\\Contracts\\Contracts.csproj"
-              },
               "F:\\WebAPI\\ASPDotNetCore-WebApi\\CompanyEmployees\\Entities\\Entities.csproj": {
                 "projectPath": "F:\\WebAPI\\ASPDotNetCore-WebApi\\CompanyEmployees\\Entities\\Entities.csproj"
               },
@@ -61,6 +58,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[3.1.9, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.4, )"
             },
             "NLog": {
               "target": "Package",
@@ -111,7 +112,11 @@
         },
         "frameworks": {
           "netstandard2.0": {
-            "projectReferences": {}
+            "projectReferences": {
+              "F:\\WebAPI\\ASPDotNetCore-WebApi\\CompanyEmployees\\Entities\\Entities.csproj": {
+                "projectPath": "F:\\WebAPI\\ASPDotNetCore-WebApi\\CompanyEmployees\\Entities\\Entities.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

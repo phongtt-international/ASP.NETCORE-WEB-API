@@ -10,3 +10,5 @@ F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\LoggerService\obj\Debug\netstand
 F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\LoggerService\obj\Debug\netstandard2.0\LoggerService.csproj.CopyComplete
 F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\LoggerService\obj\Debug\netstandard2.0\LoggerService.dll
 F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\LoggerService\obj\Debug\netstandard2.0\LoggerService.pdb
+F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\LoggerService\bin\Debug\netstandard2.0\Entities.dll
+F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\LoggerService\bin\Debug\netstandard2.0\Entities.pdb

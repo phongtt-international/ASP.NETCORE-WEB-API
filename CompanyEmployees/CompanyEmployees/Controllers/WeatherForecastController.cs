@@ -13,12 +13,14 @@ namespace CompanyEmployees.Controllers
     public class WeatherForecastController : ControllerBase
     {
         private ILoggerManager _logger;
-        public WeatherForecastController(ILoggerManager logger)
+        private IRepositoryManager _repositoryManager;
+        public WeatherForecastController(ILoggerManager logger, IRepositoryManager repositoryManager)
         {
             _logger = logger;
+            _repositoryManager = repositoryManager;
         }
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<string> GetLog()
         {
             _logger.LogInfo("Here is info message from our values controller.");
             _logger.LogDebug("Here is debug message from our values controller.");
@@ -26,6 +28,13 @@ namespace CompanyEmployees.Controllers
             _logger.LogError("Here is Error message from our values controller.");
 
             return new string[] { "value 1", "value 2" };
+        }
+        [HttpGet]
+        public ActionResult<IEnumerable<string>> Get()
+        {
+            //_repositoryManager.Company.AnyMethodFromCompanyRepository();
+            //_repository.Employee.AnyMethodFromEmployeeRepository();
+            return new string[] { "value1", "value2" };
         }
     }
 }
