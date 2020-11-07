@@ -9,7 +9,7 @@ using NLog.Fluent;
 
 namespace CompanyEmployees.Controllers
 {
-    [Route("api/[companies]")]
+    [Route("api/companies")]
     [ApiController]
     public class CompaniesController : ControllerBase
     {

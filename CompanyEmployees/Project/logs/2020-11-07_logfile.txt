@@ -1,0 +1,6 @@
+2020-11-07 09:55:23.7337 ERROR Something went wrong in the GetCompanies action System.NullReferenceException: Object reference not set to an instance of an object.
+   at CompanyEmployees.Controllers.CompaniesController.GetCompanies() in F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\CompanyEmployees\Controllers\CompaniesController.cs:line 29
+2020-11-07 10:16:32.0104 ERROR Something went wrong in the GetCompanies action System.NullReferenceException: Object reference not set to an instance of an object.
+   at CompanyEmployees.Controllers.CompaniesController.GetCompanies() in F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\CompanyEmployees\Controllers\CompaniesController.cs:line 29
+2020-11-07 10:17:33.9965 ERROR Something went wrong in the GetCompanies action System.NullReferenceException: Object reference not set to an instance of an object.
+   at CompanyEmployees.Controllers.CompaniesController.GetCompanies() in F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\CompanyEmployees\Controllers\CompaniesController.cs:line 29

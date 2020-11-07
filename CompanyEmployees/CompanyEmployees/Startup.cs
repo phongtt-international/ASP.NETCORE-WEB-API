@@ -46,6 +46,11 @@ namespace CompanyEmployees
             {
                 app.UseDeveloperExceptionPage();
             }
+            else
+            {
+                app.UseHsts();
+            }
+
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();

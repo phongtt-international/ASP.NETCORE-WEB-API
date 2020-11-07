@@ -19,18 +19,18 @@ namespace CompanyEmployees.Controllers
             _logger = logger;
             _repositoryManager = repositoryManager;
         }
-        [HttpGet]
-        public IEnumerable<string> GetLog()
-        {
-            _logger.LogInfo("Here is info message from our values controller.");
-            _logger.LogDebug("Here is debug message from our values controller.");
-            _logger.LogWarn("Here is Warn message from our values controller.");
-            _logger.LogError("Here is Error message from our values controller.");
+        //[HttpGet]
+        //public IEnumerable<string> GetLog()
+        //{
+        //    _logger.LogInfo("Here is info message from our values controller.");
+        //    _logger.LogDebug("Here is debug message from our values controller.");
+        //    _logger.LogWarn("Here is Warn message from our values controller.");
+        //    _logger.LogError("Here is Error message from our values controller.");
 
-            return new string[] { "value 1", "value 2" };
-        }
+        //    return new string[] { "value 1", "value 2" };
+        //}
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        public IEnumerable<string> Get()
         {
             //_repositoryManager.Company.AnyMethodFromCompanyRepository();
             //_repository.Employee.AnyMethodFromEmployeeRepository();

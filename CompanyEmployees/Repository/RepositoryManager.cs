@@ -19,8 +19,9 @@ namespace Repository
         {
             get 
             {
-                if (_repositoryContext == null)
+                if (_companyRepository == null)
                     _companyRepository = new CompanyRepository(_repositoryContext);
+                
                 return _companyRepository;
             } 
         }
@@ -29,8 +30,9 @@ namespace Repository
         {
             get
             {
-                if (_repositoryContext == null)
+                if (_employeeRepository == null)
                     _employeeRepository = new EmployeeRepository(_repositoryContext);
+                
                 return _employeeRepository;
             }
         }

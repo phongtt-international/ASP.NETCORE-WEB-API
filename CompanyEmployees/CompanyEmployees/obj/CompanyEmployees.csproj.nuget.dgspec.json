@@ -27,11 +27,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "F:\\WebAPI\\ASPDotNetCore-WebApi\\CompanyEmployees\\Entities\\Entities.csproj": {
-                "projectPath": "F:\\WebAPI\\ASPDotNetCore-WebApi\\CompanyEmployees\\Entities\\Entities.csproj"
-              },
               "F:\\WebAPI\\ASPDotNetCore-WebApi\\CompanyEmployees\\LoggerService\\LoggerService.csproj": {
                 "projectPath": "F:\\WebAPI\\ASPDotNetCore-WebApi\\CompanyEmployees\\LoggerService\\LoggerService.csproj"
+              },
+              "F:\\WebAPI\\ASPDotNetCore-WebApi\\CompanyEmployees\\Repository\\Repository.csproj": {
+                "projectPath": "F:\\WebAPI\\ASPDotNetCore-WebApi\\CompanyEmployees\\Repository\\Repository.csproj"
               }
             }
           }
@@ -259,6 +259,72 @@
             "NLog.Extensions.Logging": {
               "target": "Package",
               "version": "[1.6.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\WebAPI\\ASPDotNetCore-WebApi\\CompanyEmployees\\Repository\\Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\WebAPI\\ASPDotNetCore-WebApi\\CompanyEmployees\\Repository\\Repository.csproj",
+        "projectName": "Repository",
+        "projectPath": "F:\\WebAPI\\ASPDotNetCore-WebApi\\CompanyEmployees\\Repository\\Repository.csproj",
+        "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
+        "outputPath": "F:\\WebAPI\\ASPDotNetCore-WebApi\\CompanyEmployees\\Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "F:\\WebAPI\\ASPDotNetCore-WebApi\\CompanyEmployees\\Contracts\\Contracts.csproj": {
+                "projectPath": "F:\\WebAPI\\ASPDotNetCore-WebApi\\CompanyEmployees\\Contracts\\Contracts.csproj"
+              },
+              "F:\\WebAPI\\ASPDotNetCore-WebApi\\CompanyEmployees\\Entities\\Entities.csproj": {
+                "projectPath": "F:\\WebAPI\\ASPDotNetCore-WebApi\\CompanyEmployees\\Entities\\Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
             }
           },
           "imports": [
