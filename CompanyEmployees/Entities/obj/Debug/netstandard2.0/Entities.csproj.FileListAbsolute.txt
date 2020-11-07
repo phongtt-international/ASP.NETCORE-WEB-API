@@ -1,9 +1,8 @@
 F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\Entities\bin\Debug\netstandard2.0\Entities.deps.json
 F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\Entities\bin\Debug\netstandard2.0\Entities.dll
 F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\Entities\bin\Debug\netstandard2.0\Entities.pdb
-F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\Entities\obj\Debug\netstandard2.0\Entities.csproj.CoreCompileInputs.cache
 F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\Entities\obj\Debug\netstandard2.0\Entities.AssemblyInfoInputs.cache
 F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\Entities\obj\Debug\netstandard2.0\Entities.AssemblyInfo.cs
 F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\Entities\obj\Debug\netstandard2.0\Entities.dll
 F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\Entities\obj\Debug\netstandard2.0\Entities.pdb
-F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\Entities\obj\Debug\netstandard2.0\Entities.csprojAssemblyReference.cache
+F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\Entities\obj\Debug\netstandard2.0\Entities.csproj.CoreCompileInputs.cache

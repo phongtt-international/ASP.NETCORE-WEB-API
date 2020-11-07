@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "b+1+nLeG2AG3KvlYKc+SLALYcHmyWc+gMkf4kQnGL6CkRrljuKI7ABPpQ8bbW9iFJAJ1DO0DV1WG6ieyoDeuog==",
+  "dgSpecHash": "Eu7BO1Fn3AIVYFqnHRHnly712Jzog4ZMWWoWLH1H0o/WdDomZHUN7eliTmMLuQl87eY0jSF15W4bE7kbbf/SvQ==",
   "success": true,
   "projectFilePath": "F:\\WebAPI\\ASPDotNetCore-WebApi\\CompanyEmployees\\Repository\\Repository.csproj",
   "expectedPackageFiles": [
@@ -22,6 +22,7 @@
     "C:\\Users\\Dell\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.9\\microsoft.extensions.primitives.3.1.9.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\system.collections.immutable\\1.7.1\\system.collections.immutable.1.7.1.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
