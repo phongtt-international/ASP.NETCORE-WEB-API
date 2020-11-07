@@ -18,7 +18,7 @@ namespace CompanyEmployees.Controllers
         private readonly IRepositoryManager _repositoryManager;
         private readonly ILoggerManager _logger;
         private readonly IMapper _mapper;
-        public CompaniesController(IRepositoryManager repositoryManager, 
+        public CompaniesController(IRepositoryManager repositoryManager,
                                     ILoggerManager logger,
                                     IMapper mapper)
         {
@@ -47,6 +47,18 @@ namespace CompanyEmployees.Controllers
                 _logger.LogError($"Something went wrong in the {nameof(GetCompanies)} action { ex}");
                 return StatusCode(500, "Internal server error");
             }
+        }
+
+        [HttpGet("{id}")]
+        public IActionResult GetCompany(Guid id)
+        {
+            var company = _repositoryManager.Company.GetCompany(id, trackChanges: false);
+            if(company == null)
+            {
+                return NotFound();
+            }
+            var companyDto = _mapper.Map<CompanyDto>(company);
+            return Ok(companyDto);
         }
     }
 }
