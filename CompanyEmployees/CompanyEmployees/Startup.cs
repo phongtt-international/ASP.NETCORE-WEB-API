@@ -40,7 +40,19 @@ namespace CompanyEmployees
 
             services.AddAutoMapper(typeof(Startup));
 
-            services.AddControllers();
+            //default response json
+            //services.AddControllers();
+            //config response xml
+            services.AddControllers(config =>
+            {
+                config.RespectBrowserAcceptHeader = true;
+                //We added the ReturnHttpNotAcceptable = true option, which tells
+                //the server that if the client tries to negotiate for the media type the
+                //server doesn’t support, it should return the 406 Not Acceptable status
+                //code.
+                config.ReturnHttpNotAcceptable = true;
+            }).AddXmlDataContractSerializerFormatters()
+              .AddCustomCSVFormatter();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
