@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using Contracts;
 using Entities.DTO;
 using Microsoft.AspNetCore.Http;
@@ -16,10 +17,14 @@ namespace CompanyEmployees.Controllers
     {
         private readonly IRepositoryManager _repositoryManager;
         private readonly ILoggerManager _logger;
-        public CompaniesController(IRepositoryManager repositoryManager, ILoggerManager logger)
+        private readonly IMapper _mapper;
+        public CompaniesController(IRepositoryManager repositoryManager, 
+                                    ILoggerManager logger,
+                                    IMapper mapper)
         {
             _repositoryManager = repositoryManager;
             _logger = logger;
+            _mapper = mapper;
         }
 
         [HttpGet]
@@ -28,12 +33,13 @@ namespace CompanyEmployees.Controllers
             try
             {
                 var companies = _repositoryManager.Company.GetAllCompanies(trackChanges: false);
-                var companiesDto = companies.Select(p => new CompanyDto
-                {
-                    Id = p.Id,
-                    Name = p.Name,
-                    FullAddress = string.Join(' ', p.Address, p.Country)
-                }).ToList(); 
+                //var companiesDto = companies.Select(p => new CompanyDto
+                //{
+                //    Id = p.Id,
+                //    Name = p.Name,
+                //    FullAddress = string.Join(' ', p.Address, p.Country)
+                //}).ToList(); 
+                var companiesDto = _mapper.Map<IEnumerable<CompanyDto>>(companies);
                 return Ok(companiesDto);
             }
             catch (Exception ex)
