@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Contracts;
+using Entities.DTO;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using NLog.Fluent;
@@ -27,7 +28,13 @@ namespace CompanyEmployees.Controllers
             try
             {
                 var companies = _repositoryManager.Company.GetAllCompanies(trackChanges: false);
-                return Ok(companies);
+                var companiesDto = companies.Select(p => new CompanyDto
+                {
+                    Id = p.Id,
+                    Name = p.Name,
+                    FullAddress = string.Join(' ', p.Address, p.Country)
+                }).ToList(); 
+                return Ok(companiesDto);
             }
             catch (Exception ex)
             {
