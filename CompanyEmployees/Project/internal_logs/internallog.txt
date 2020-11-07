@@ -4498,3 +4498,20 @@
 2020-11-07 11:16:42.1878 Trace  Scanning Property LineEnding 'Default' NLog.Targets
 2020-11-07 11:16:42.2037 Trace File Target[logfile] has 2 layouts
 2020-11-07 11:16:42.2037 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.RetryingMultiProcessFileAppender+Factory
+2020-11-07 11:34:16.2964 Debug ScanAssembly('NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2020-11-07 11:34:16.4141 Debug Found assembly location directory: 'F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\CompanyEmployees\bin\Debug\netcoreapp3.1' (NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c)
+2020-11-07 11:34:16.4268 Debug Search for auto loading files in location: F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\CompanyEmployees\bin\Debug\netcoreapp3.1
+2020-11-07 11:34:16.4463 Debug Start auto loading, location: F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\CompanyEmployees\bin\Debug\netcoreapp3.1
+2020-11-07 11:34:16.4682 Info Auto loading assembly file: F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\CompanyEmployees\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-11-07 11:34:16.4682 Info Loading assembly file: F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\CompanyEmployees\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-11-07 11:34:16.4928 Info NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 1.6.5.1409. Product version: 1.6.5+c05b105d8cd52581a50da2af91ebacf8d4bc8f0d. GlobalAssemblyCache: False
+2020-11-07 11:34:16.5079 Debug ScanAssembly('NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2020-11-07 11:34:16.5228 Info Auto loading assembly file: F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\CompanyEmployees\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll succeeded!
+2020-11-07 11:34:16.5366 Trace Assembly 'Microsoft.Extensions.Logging, Version=3.1.9.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' will be hidden in callsite stacktrace
+2020-11-07 11:34:16.5478 Trace Assembly 'Microsoft.Extensions.Logging.Abstractions, Version=3.1.9.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' will be hidden in callsite stacktrace
+2020-11-07 11:34:16.5604 Trace Assembly 'NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c' will be hidden in callsite stacktrace
+2020-11-07 11:34:16.5755 Debug Auto loading done
+2020-11-07 11:34:16.5755 Info Message Template Auto Format enabled
+2020-11-07 11:34:16.6198 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-11-07 11:34:16.6395 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2020-11-07 11:34:16.6536 Debug Setting 'NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper.uppercase' to 'true'
