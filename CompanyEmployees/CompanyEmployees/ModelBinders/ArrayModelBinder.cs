@@ -17,6 +17,7 @@ namespace CompanyEmployees.ModelBinders
                 bindingContext.Result = ModelBindingResult.Failed();
                 return Task.CompletedTask;
             }
+            //check parameters from client, route or frombody or header
             var providedValue = bindingContext.ValueProvider
                 .GetValue(bindingContext.ModelName)
                 .ToString();
