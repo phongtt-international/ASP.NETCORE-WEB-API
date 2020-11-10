@@ -8,6 +8,7 @@ using Entities;
 using Entities.DTO;
 using Entities.Models;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CompanyEmployees.Controllers
@@ -123,6 +124,33 @@ namespace CompanyEmployees.Controllers
             _repositoryManager.Save();
             return NoContent();
 
+        }
+        [HttpPatch("{id}")]
+        public IActionResult PartiallyUpdateEmployeeForCompany(Guid companyId, Guid id, 
+            [FromBody]JsonPatchDocument<EmployeeForUpdateDto> patchDoc)
+        {
+            if(patchDoc == null)
+            {
+                _logger.LogError("patchDoc object sent from client is null.");
+                return BadRequest("patchDoc object is null");
+            }
+            var company = _repositoryManager.Company.GetCompany(companyId, trackChanges: false);
+            if (company == null)
+            {
+                _logger.LogInfo($"Company with id: {companyId} doesn't exist in the database.");
+            return NotFound();
+            }
+            var employeeEntity = _repositoryManager.Employee.GetEmployee(companyId, id, trackChanges: true);
+            if (employeeEntity == null)
+            {
+                _logger.LogInfo($"Employee with id: {id} doesn't exist in the database.");
+                return NotFound();
+            }
+            var employeeToPatch = _mapper.Map<EmployeeForUpdateDto>(employeeEntity);
+            patchDoc.ApplyTo(employeeToPatch);
+            _mapper.Map(employeeToPatch, employeeEntity);
+            _repositoryManager.Save();
+            return NoContent();
         }
 
     }

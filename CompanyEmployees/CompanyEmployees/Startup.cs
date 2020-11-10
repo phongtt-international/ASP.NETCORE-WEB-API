@@ -51,7 +51,8 @@ namespace CompanyEmployees
                 //server doesn’t support, it should return the 406 Not Acceptable status
                 //code.
                 config.ReturnHttpNotAcceptable = true;
-            }).AddXmlDataContractSerializerFormatters()
+            }).AddNewtonsoftJson()
+              .AddXmlDataContractSerializerFormatters()
               .AddCustomCSVFormatter();
         }
 
