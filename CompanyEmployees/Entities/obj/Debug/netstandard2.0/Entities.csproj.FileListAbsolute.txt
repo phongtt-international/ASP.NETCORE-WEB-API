@@ -6,4 +6,3 @@ F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\Entities\obj\Debug\netstandard2.
 F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\Entities\obj\Debug\netstandard2.0\Entities.AssemblyInfo.cs
 F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\Entities\obj\Debug\netstandard2.0\Entities.dll
 F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\Entities\obj\Debug\netstandard2.0\Entities.pdb
-F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\Entities\obj\Debug\netstandard2.0\Entities.csprojAssemblyReference.cache
