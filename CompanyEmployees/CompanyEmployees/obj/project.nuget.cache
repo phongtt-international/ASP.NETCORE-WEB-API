@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "24QmnPp0rjZIAJnlRcQjCt2uzByM+yNL1xHY71tJIggteaRST73Cre3l/uIQK7chJQhLjtKt0e6yu0uvuV3+WA==",
+  "dgSpecHash": "YShWVAy5C7++A+sYzuynkP1SdjBgVwB4JwgQlUBTr+NJpkdEpbStBOF5QWqWrX98HzfrWFtOaKzaUxFO4W+g3A==",
   "success": true,
   "projectFilePath": "F:\\WebAPI\\ASPDotNetCore-WebApi\\CompanyEmployees\\CompanyEmployees\\CompanyEmployees.csproj",
   "expectedPackageFiles": [
@@ -117,6 +117,7 @@
     "C:\\Users\\Dell\\.nuget\\packages\\system.io.filesystem\\4.3.0\\system.io.filesystem.4.3.0.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\system.io.filesystem.primitives\\4.3.0\\system.io.filesystem.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\system.linq\\4.3.0\\system.linq.4.3.0.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\system.linq.dynamic.core\\1.2.5\\system.linq.dynamic.core.1.2.5.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\system.linq.expressions\\4.3.0\\system.linq.expressions.4.3.0.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\system.net.http\\4.3.0\\system.net.http.4.3.0.nupkg.sha512",
