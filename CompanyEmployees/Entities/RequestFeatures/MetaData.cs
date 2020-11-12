@@ -14,4 +14,5 @@ namespace Entities.RequestFeatures
         public bool HasPrevious => CurrentPage > 1;
         public bool Next => CurrentPage < TotalPages;
     }
+
 }
