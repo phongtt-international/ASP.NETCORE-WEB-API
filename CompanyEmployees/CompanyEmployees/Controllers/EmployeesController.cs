@@ -8,6 +8,7 @@ using Contracts;
 using Entities;
 using Entities.DTO;
 using Entities.Models;
+using Entities.RequestFeatures;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
@@ -30,7 +31,7 @@ namespace CompanyEmployees.Controllers
             _logger = logger;
         }
         [HttpGet]
-        public async Task<IActionResult> GetEmployeesForCompany(Guid companyId)
+        public async Task<IActionResult> GetEmployeesForCompany(Guid companyId, [FromQuery] EmployeeParameters employeeParameters)
         {
             var company = await _repositoryManager.Company.GetCompanyAsync(companyId, trackChanges: false);
             if (company == null)
@@ -38,7 +39,7 @@ namespace CompanyEmployees.Controllers
                 _logger.LogError($"The Company with id: {companyId} doesn't exits in the Database.");
                 return NotFound();
             }
-            var employees = _repositoryManager.Employee.GetEmployees(companyId, trackChanges: false);
+            var employees = await _repositoryManager.Employee.GetEmployeesAsync(companyId, employeeParameters, trackChanges: false);
             var employeeDto = _mapper.Map<IEnumerable<EmployeeDto>>(employees);
             return Ok(employeeDto);
         }
@@ -52,7 +53,7 @@ namespace CompanyEmployees.Controllers
                 _logger.LogError($"The Company with id: {companyId} doesn't exits in the Database.");
                 return NotFound();
             }
-            var employee = _repositoryManager.Employee.GetEmployee(companyId, id, trackChanges: false);
+            var employee = await _repositoryManager.Employee.GetEmployeeAsync(companyId, id, trackChanges: false);
             if (employee == null)
             {
                 _logger.LogInfo($"Employee with id: {id} doesn't exist in the database.");

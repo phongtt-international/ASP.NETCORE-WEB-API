@@ -1,10 +1,13 @@
 ﻿using Contracts;
 using Entities;
 using Entities.Models;
+using Entities.RequestFeatures;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Repository
 {
@@ -15,12 +18,15 @@ namespace Repository
 
         }
 
-        public IEnumerable<Employee> GetEmployees(Guid companyId, bool trackChanges) =>
-            FindByCondition(p => p.CompanyId.Equals(companyId), trackChanges)
-            .OrderBy(p => p.Name);
-        public Employee GetEmployee(Guid companyId, Guid id, bool trackChanges) =>
-            FindByCondition(c => c.CompanyId.Equals(companyId) && c.Id.Equals(id), trackChanges)
-            .SingleOrDefault();
+        public async Task<IEnumerable<Employee>> GetEmployeesAsync(Guid companyId, EmployeeParameters employeeParameters,bool trackChanges) =>
+            await FindByCondition(p => p.CompanyId.Equals(companyId), trackChanges)
+            .OrderBy(p => p.Name)
+            .Skip((employeeParameters.PageNumber - 1) * employeeParameters.PageSize)
+            .Take(employeeParameters.PageSize)
+            .ToListAsync();
+        public async Task<Employee> GetEmployeeAsync(Guid companyId, Guid id, bool trackChanges) =>
+            await FindByCondition(c => c.CompanyId.Equals(companyId) && c.Id.Equals(id), trackChanges)
+            .SingleOrDefaultAsync();
 
         public void CreateEmployeeForCompany(Guid companyId, Employee employee)
         {
