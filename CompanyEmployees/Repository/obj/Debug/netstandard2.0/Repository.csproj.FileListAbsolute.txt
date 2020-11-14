@@ -9,3 +9,6 @@ F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\Repository\bin\Debug\netstandard
 F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\Repository\bin\Debug\netstandard2.0\Contracts.pdb
 F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\Repository\bin\Debug\netstandard2.0\Entities.pdb
 F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\Repository\obj\Debug\netstandard2.0\Repository.csproj.CopyComplete
+F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\Repository\bin\Debug\netstandard2.0\Repository.pdb
+F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\Repository\obj\Debug\netstandard2.0\Repository.dll
+F:\WebAPI\ASPDotNetCore-WebApi\CompanyEmployees\Repository\obj\Debug\netstandard2.0\Repository.pdb

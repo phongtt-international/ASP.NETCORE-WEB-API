@@ -45,6 +45,8 @@ namespace CompanyEmployees
             services.AddScoped<ValidateCompanyExistsAttribute>();
             services.AddScoped<ValidateEmployeeForCompanyExistsAttribute>();
 
+            //services.AddScoped<IDataShaper<EmployeeDto>, DataShaper<EmployeeDto>>();
+
             services.AddAutoMapper(typeof(Startup));
 
             //default response json
