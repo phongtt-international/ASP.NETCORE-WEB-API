@@ -7,6 +7,7 @@ using AutoMapper;
 using CompanyEmployees.ActionFilters;
 using CompanyEmployees.Extensions;
 using Contracts;
+using Entities.DTO;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpOverrides;
@@ -17,6 +18,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using NLog;
+using Repository;
 
 namespace CompanyEmployees
 {
@@ -47,6 +49,10 @@ namespace CompanyEmployees
 
             //services.AddScoped<IDataShaper<EmployeeDto>, DataShaper<EmployeeDto>>();
 
+            services.ConfigureResponseCaching();
+            services.ConfigureHttpCacheHeaders();
+
+
             services.AddAutoMapper(typeof(Startup));
 
             //default response json
@@ -60,6 +66,10 @@ namespace CompanyEmployees
                 //server doesn’t support, it should return the 406 Not Acceptable status
                 //code.
                 config.ReturnHttpNotAcceptable = true;
+                config.CacheProfiles.Add("120SecondsDuration", new CacheProfile
+                {
+                    Duration = 120
+                });
             }).AddNewtonsoftJson()
               .AddXmlDataContractSerializerFormatters()
               .AddCustomCSVFormatter();
@@ -88,6 +98,11 @@ namespace CompanyEmployees
             });
 
             app.UseRouting();
+
+            app.UseResponseCaching();
+            app.UseHttpCacheHeaders();
+
+
 
             app.UseAuthorization();
 
